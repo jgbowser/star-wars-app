@@ -44,8 +44,6 @@ class App extends React.Component {
 
   render() {
 
-    console.log(this.state.results)
-    
     const contextValue = {
       results: this.state.results,
       path: this.state.path,
