@@ -11,20 +11,47 @@ import './App.css';
 class App extends React.Component {
 
   state = {
-    results: []
+    results: [],
+    path: 'people',
+    searchExecuted: false,
   }
 
-  setResults= data => {
+  resetResults = () => {
+    this.setState({
+      results: []
+    })
+  }
+
+  setResults = data => {
     this.setState({
       results: data 
     })
   }
 
+  setPath = (path) => {
+    this.setState({
+      path
+    })
+  }
+
+  setSearchExecuted = (bool) => {
+    this.setState({
+      searchExecuted: bool
+    })
+  }
+
   render() {
     const contextValue = {
-      results: this.state,
+      results: this.state.results,
+      path: this.state.path,
+      searchExecuted: this.state.searchExecuted,
       setResults: this.setResults,
+      setPath: this.setPath,
+      resetResults: this.resetResults,
+      setSearchExecuted: this.setSearchExecuted,
     }
+
+    console.log(this.state.results)
     return (
       <SearchContext.Provider value={contextValue}>
         <div className="App">
