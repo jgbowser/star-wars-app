@@ -11,9 +11,9 @@ export default class ResultsList extends React.Component {
     const { results, path, searchExecuted } = this.context
     let resultItems = []
     if(path !== 'films') {
-      resultItems = results.map((result, i) => <ResultItem key={i} name={result.name}/>)
+      resultItems = results.map((result, i) => <ResultItem key={i} id={result.id}name={result.name}/>)
     } else {
-      resultItems = results.map((result, i) => <ResultItem key={i} name={result.title}/>)
+      resultItems = results.map((result, i) => <ResultItem key={i} id={result.id}name={result.title}/>)
     }
     
     return (

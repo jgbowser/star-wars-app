@@ -1,4 +1,5 @@
 import React from 'react'
+import cuid from 'cuid'
 import SearchContext from '../SearchContext'
 import ResultsList from '../ResultsList/ResultsList'
 
@@ -29,7 +30,8 @@ export default class SearchScreen extends React.Component {
         return resp.json()
       })
       .then(data => {
-        this.context.setResults(data.results)
+        const dataWithIds = data.results.map(result =>{ return { ...result, id: cuid()}})
+        this.context.setResults(dataWithIds)
         this.context.setSearchExecuted(true)
       })
       .catch(err => {
