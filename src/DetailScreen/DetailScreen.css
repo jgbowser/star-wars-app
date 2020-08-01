@@ -6,4 +6,41 @@
 
 .results-wrapper {
   font-family: 'Source Code Pro', monospace;
+  background-color: rgba(16, 16, 177, 0.473);
+  border: 5px solid rgba(40, 146, 245, 0.76);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 20px 30px;
+  padding: 15px 5px;
+  color: white;
+}
+
+.results-wrapper ul {
+  list-style-type: none;
+  padding-left: 4px;
+}
+
+.results-wrapper ul li {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media all and (min-width: 700px) {
+  
+  .results-wrapper ul {
+    padding-left: 20px;
+  }
+
+  .results-wrapper ul li {
+    font-size: 20px;
+  }
+
+  .small-text {
+    font-size: 12px;
+  }
 }

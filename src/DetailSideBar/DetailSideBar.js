@@ -1,4 +1,5 @@
 import React from 'react'
+import './DetailSideBar.css'
 
 export default class DetailSideBar extends React.Component {
   
@@ -8,7 +9,9 @@ export default class DetailSideBar extends React.Component {
   render() {
 
     return (
-      <button onClick={() => this.goBack()}>Go Back</button>
+      <div className="detail-sidebar">
+        <button className="btn-primary" onClick={() => this.goBack()}>Go Back</button>
+      </div>
     )
   }
 }
