@@ -10,3 +10,9 @@ header img {
   padding: 25px 0;
   
 }
+
+@media all and (min-width: 700px) {
+  header img {
+    width: 40%;
+  }
+}
