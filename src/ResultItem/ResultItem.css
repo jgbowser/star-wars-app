@@ -1,0 +1,10 @@
+.result-item-link {
+  color: white;
+  letter-spacing: normal;
+}
+
+.result-item-link:hover,
+.result-item-link:active {
+  color: blue;
+  text-shadow: 0px 0px 8px rgba(26, 159, 236, 0.884);
+}

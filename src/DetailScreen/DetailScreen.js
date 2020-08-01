@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchContext from '../SearchContext'
+import './DetailScreen.css'
 
 export default class DetailScreen extends React.Component {
 

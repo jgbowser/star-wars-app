@@ -59,16 +59,18 @@ class App extends React.Component {
       <SearchContext.Provider value={contextValue}>
         <div className="App">
             <Route path={'/'} component={Jumbotron} />
-            <NavSection>
-              <Route exact path={'/'} component={SideBar} />
-              <Route exact path={'/:search'} component={SideBar} />
-              <Route exact path={'/:seaerch/:selected'} component={DetailSideBar} />
-            </NavSection>
-            <MainSection>
-              <Route exact path={'/'} component={SearchScreen} />
-              <Route exact path={'/:search'} component={SearchScreen} />
-              <Route exact path={'/:search/:selected'} component={DetailScreen} />
-            </MainSection> 
+              <div className="main-wrapper">
+                <NavSection>
+                  <Route exact path={'/'} component={SideBar} />
+                  <Route exact path={'/:search'} component={SideBar} />
+                  <Route exact path={'/:seaerch/:selected'} component={DetailSideBar} />
+                </NavSection>
+                <MainSection>
+                  <Route exact path={'/'} component={SearchScreen} />
+                  <Route exact path={'/:search'} component={SearchScreen} />
+                  <Route exact path={'/:search/:selected'} component={DetailScreen} />
+                </MainSection>
+              </div>
         </div>
       </SearchContext.Provider>
     );

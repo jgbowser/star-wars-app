@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import SearchContext from '../SearchContext'
+import './NavSearchOptions.css'
 
 export default class NavSearchOptions extends React.Component {
 
@@ -10,7 +11,7 @@ export default class NavSearchOptions extends React.Component {
     const {resetResults, setPath, setSearchExecuted } = this.context
     return (
       <div className="search-options-wrapper">
-        <Link to='/'> 
+         
           <div 
             className="search-option-link" 
             onClick={() => {
@@ -19,10 +20,9 @@ export default class NavSearchOptions extends React.Component {
               setSearchExecuted(false)
               }}
           >
-            <h4>People</h4>
+           <NavLink to='/people'> <h4>People</h4></NavLink>
           </div>
-        </Link>
-        <Link to='/films'> 
+        
         <div 
             className="search-option-link" 
             onClick={() => {
@@ -31,10 +31,9 @@ export default class NavSearchOptions extends React.Component {
               setSearchExecuted(false)
               }}
           >
-            <h4>Films</h4>
+            <NavLink to='/films'><h4>Films</h4></NavLink>
           </div>
-        </Link>
-        <Link to='/starships'> 
+        
         <div 
             className="search-option-link" 
             onClick={() => {
@@ -43,10 +42,9 @@ export default class NavSearchOptions extends React.Component {
               setSearchExecuted(false)
               }}
           >
-            <h4>Starships</h4>
+            <NavLink to='/starships'><h4>Starships</h4></NavLink>
           </div>
-        </Link>
-        <Link to='./vehicles'> 
+         
         <div 
             className="search-option-link" 
             onClick={() => {
@@ -55,10 +53,9 @@ export default class NavSearchOptions extends React.Component {
               setSearchExecuted(false)
               }}
           >
-            <h4>Vehicles</h4>
+            <NavLink to='./vehicles'><h4>Vehicles</h4></NavLink>
           </div>
-        </Link>
-        <Link to='./species'> 
+         
         <div 
             className="search-option-link" 
             onClick={() => {
@@ -67,10 +64,9 @@ export default class NavSearchOptions extends React.Component {
               setSearchExecuted(false)
               }}
           >
-            <h4>Species</h4>
+           <NavLink to='./species'> <h4>Species</h4></NavLink>
           </div>
-        </Link>
-        <Link to='./planets'> 
+         
         <div 
             className="search-option-link" 
             onClick={() => {
@@ -79,9 +75,9 @@ export default class NavSearchOptions extends React.Component {
               setSearchExecuted(false)
               }}
           >
-            <h4>Planets</h4>
+            <NavLink to='./planets'><h4>Planets</h4></NavLink>
           </div>
-        </Link>
+        
       </div>
     )
   }

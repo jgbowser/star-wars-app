@@ -1,0 +1,22 @@
+nav {
+  width: 100%;
+  background-color: rgb(61, 61, 61);
+  text-align: center;
+  color: #D7AA00;
+  padding: 15px 0;
+}
+
+a {
+  display: block;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  border-left: 10px solid #D7AA00;
+  border-right: 10px solid #D7AA00;
+  color: #D7AA00;
+}

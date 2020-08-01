@@ -1,0 +1,79 @@
+main {
+  height: 100%;
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  padding: 10px 0;
+}
+
+h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+form {
+  font-family: 'Source Code Pro', monospace;
+  padding: 15px 0;
+  margin: 0 10px;
+  background-color: rgb(61, 61, 61);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 2px -3px 6px 1px rgba(4, 107, 167, 0.712);
+}
+
+.query-input,
+.query-label,
+.btn-primary {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.query-label {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color:white;
+}
+
+.query-input {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  padding: 8px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(4, 107, 167, 0.993);
+  background-color: rgba(146, 215, 255, 0.753);
+  color: blue;
+}
+
+.btn-primary {
+  background-color: blue;
+  padding: 8px;
+  border: 2px solid rgba(4, 107, 167, 0.993);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: rgba(146, 215, 255, 0.753);
+  color: blue; 
+  box-shadow: 0px 0px 8px 3px rgba(26, 159, 236, 0.884);
+  
+}
+
+.try-again,
+.error-message {
+  font-family: 'Source Code Pro', monospace;
+  color: red;
+  text-align: center;
+  margin: 25px;
+}

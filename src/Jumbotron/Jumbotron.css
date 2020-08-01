@@ -1,0 +1,12 @@
+header {
+  width: 100%;
+  background-color: black;
+}
+
+header img {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding: 25px 0;
+  
+}
