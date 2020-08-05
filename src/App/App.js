@@ -63,7 +63,7 @@ class App extends React.Component {
                 <NavSection>
                   <Route exact path={'/'} component={SideBar} />
                   <Route exact path={'/:search'} component={SideBar} />
-                  <Route exact path={'/:seaerch/:selected'} component={DetailSideBar} />
+                  <Route exact path={'/:search/:selected'} component={DetailSideBar} />
                 </NavSection>
                 <MainSection>
                   <Route exact path={'/'} component={SearchScreen} />
