@@ -1,3 +1,6 @@
+View the live page at: [Star Wars Record Search](https://starwars-record-search.vercel.app/) (allow a moment for Vercel to spin up the virtual machine)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
